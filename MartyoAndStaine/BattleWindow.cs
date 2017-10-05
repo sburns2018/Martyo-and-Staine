@@ -12,7 +12,6 @@ namespace MartyoAndStaine {
         private int shakeFace, noCrack, whoAttac, attackFrames;
         private Rectangle mFace, sFace, mAttack, sAttack;
         private SpriteFont font;
-        private Texture2D mLife, sLife, eLife;
         private BattleEnemy enemy1, enemy2;
 
         public BattleWindow(Game game, SpriteBatch sb) : base(game) {
