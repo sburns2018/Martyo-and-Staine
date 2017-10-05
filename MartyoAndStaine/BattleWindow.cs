@@ -12,7 +12,6 @@ namespace MartyoAndStaine {
         private int shakeFace, noCrack, whoAttac, attackFrames;
         private Rectangle mFace, sFace, mAttack, sAttack;
         private SpriteFont font;
-        private Texture2D mLife, sLife, eLife;
         private BattleEnemy enemy1, enemy2;
 
         public BattleWindow(Game game, SpriteBatch sb) : base(game) {
@@ -27,9 +26,6 @@ namespace MartyoAndStaine {
             mHealth = 100;
             sHealth = 100;
             shakeFace = 20;
-            mLife = Game.Content.Load<Texture2D>("mRect");
-            sLife = Game.Content.Load<Texture2D>("sRect");
-            eLife = Game.Content.Load<Texture2D>("eRect");
             mAttacking = false;
             sAttacking = false;
             eAttacking1 = false;
@@ -130,11 +126,11 @@ namespace MartyoAndStaine {
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(0, 500, 550, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(650, 500, 550, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("martyoFace"), mFace, Color.White);
-            sprite.Draw(mLife, new Rectangle(0, 580, Convert.ToInt32(mHealth * 1.37), 20), Color.White);
+            sprite.Draw(Game.Content.Load<Texture2D>("mRect"), new Rectangle(0, 580, Convert.ToInt32(mHealth * 1.37), 20), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("staineFace"), sFace, Color.White);
-            sprite.Draw(sLife, new Rectangle(275, 580, Convert.ToInt32(sHealth * 1.37), 20), Color.White);
+            sprite.Draw(Game.Content.Load<Texture2D>("sRect"), new Rectangle(275, 580, Convert.ToInt32(sHealth * 1.37), 20), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("shrub_face"), new Rectangle(650, 500, 137, 80), Color.White);
-            sprite.Draw(eLife, new Rectangle(650, 580, Convert.ToInt32(enemy1.getHealth() * 1.37), 20), Color.White);
+            sprite.Draw(Game.Content.Load<Texture2D>("eRect"), new Rectangle(650, 580, Convert.ToInt32(enemy1.getHealth() * 1.37), 20), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("mAttac"), mAttack, Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("sAttac"), sAttack, Color.White);
             base.Draw(gameTime);
