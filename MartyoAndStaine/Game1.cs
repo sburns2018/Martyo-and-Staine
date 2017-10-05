@@ -67,7 +67,15 @@ namespace MartyoAndStaine {
                 level.addPlatform(732, 270, 200, 30);
                 level.addPlatform(965, 420, 200, 30);
                 level.addEnemy(this, 1, 550, 520, 50, 50, "shrub", 0);
-                level.addEnemy(this, 1, 599, 70, 50, 50, "shrub", 3);
+                level.addEnemy(this, 1, 599, 70, 50, 50, "shrub", 3);*/
+                /*string level1data = null;
+                using (var stream = TitleContainer.OpenStream("Sample.txt")) {
+                    using (var reader = new StreamReader(stream)) {
+                        // Call StreamReader methods like ReadLine, ReadBlock, or ReadToEnd to read in your data, e.g.: 
+                        level1data = reader.ReadToEnd();
+                    }
+                } */
+                // Hopefully getting closer to reading file
             }
             if (countSwitch >= 15) {
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter) && (aS == level)) {
