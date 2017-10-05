@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 using System.IO;
 
 namespace MartyoAndStaine {
@@ -67,15 +68,22 @@ namespace MartyoAndStaine {
                 level.addPlatform(732, 270, 200, 30);
                 level.addPlatform(965, 420, 200, 30);
                 level.addEnemy(this, 1, 550, 520, 50, 50, "shrub", 0);
+<<<<<<< HEAD
+                level.addEnemy(this, 1, 599, 70, 50, 50, "shrub", 3); 
+                /*using (var stream = TitleContainer.OpenStream("Sample.txt")) {
+=======
                 level.addEnemy(this, 1, 599, 70, 50, 50, "shrub", 3);
                 /*string level1data = null;
                 using (var stream = TitleContainer.OpenStream("Sample.txt")) {
+>>>>>>> eb4b287fdc24a685b32429a9665c07d73ba98e8e
                     using (var reader = new StreamReader(stream)) {
                         // Call StreamReader methods like ReadLine, ReadBlock, or ReadToEnd to read in your data, e.g.: 
-                        level1data = reader.ReadToEnd();
+                        while (!reader.EndOfStream) {
+                            var line = reader.ReadLine();
+                            line. // IDKDKDKIASdKASKAS
+                        }
                     }
                 } */
-                // Hopefully getting closer to reading file
             }
             if (countSwitch >= 15) {
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter) && (aS == level)) {
