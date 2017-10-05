@@ -8,9 +8,9 @@ namespace MartyoAndStaine {
         private SpriteBatch sprite;
         private double turn, mHealth, sHealth;
         private MouseState mouse;
-        private Boolean mAlive, sAlive, mAttacking, sAttacking, eAttacking1, eAttacking2;
+        private Boolean mAlive, sAlive, mAttacking, sAttacking, eAttacking1, eAttacking2, choosing, canShake;
         private int shakeFace, noCrack, whoAttac, attackFrames;
-        private Rectangle mFace, sFace, mAttack, sAttack;
+        private Rectangle mFace, sFace, mAttack, sAttack, eRecta1, eRecta2;
         private SpriteFont font;
         private BattleEnemy enemy1, enemy2;
 
@@ -20,7 +20,10 @@ namespace MartyoAndStaine {
             sFace = new Rectangle(275, 500, 137, 80);
             mAttack = new Rectangle(137, 500, 137, 40);
             sAttack = new Rectangle(412, 500, 137, 40);
+            eRecta1 = new Rectangle(750, 176, 50, 50);
+            eRecta2 = new Rectangle(950, 350, 50, 50);
             turn = 1;
+            canShake = true;
             mAlive = true;
             sAlive = true;
             mHealth = 100;
@@ -30,6 +33,7 @@ namespace MartyoAndStaine {
             sAttacking = false;
             eAttacking1 = false;
             eAttacking2 = false;
+            choosing = false;
         }
 
         public override void Update(GameTime gameTime) {
@@ -52,34 +56,59 @@ namespace MartyoAndStaine {
                 enemy2.setAlive(false);
             }
             if (turn == 1 && mAlive) {
-                if (noCrack >= 15) {
+                if (noCrack >= 15 && canShake) {
                     mFace.Y -= shakeFace;
                     shakeFace *= -1;
                     noCrack = 0;
                 }
-                if (mouse.X >= mAttack.X && mouse.X <= mAttack.X + mAttack.Width && mouse.Y >= mAttack.Y && mouse.Y <= mAttack.Y + mAttack.Height && mouse.LeftButton == ButtonState.Pressed) {
+                if (!choosing && mouse.X >= mAttack.X && mouse.X <= mAttack.X + mAttack.Width && mouse.Y >= mAttack.Y && mouse.Y <= mAttack.Y + mAttack.Height && mouse.LeftButton == ButtonState.Pressed) {
                     mFace.Y = 500;
                     shakeFace = 20;
+                    canShake = false;
+                    attackFrames = 0;
+                    choosing = true;
+                }
+                if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta1.X + eRecta1.Width && mouse.Y >= eRecta1.Y && mouse.Y <= eRecta1.Y + eRecta1.Height && mouse.LeftButton == ButtonState.Pressed)
+                {
                     enemy1.setHealth(enemy1.getHealth() - 10);
                     turn++;
-                    attackFrames = 0;
-                    mAttacking = true;
+                    canShake = true;
+                    choosing = false;
+                } else if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta2.X + eRecta2.Width && mouse.Y >= eRecta2.Y && mouse.Y <= eRecta2.Y + eRecta2.Height && mouse.LeftButton == ButtonState.Pressed)
+                {
+                    enemy2.setHealth(enemy2.getHealth() - 10);
+                    canShake = true;
+                    turn++;
+                    choosing = false;
                 }
             } else if (turn == 1 && !mAlive) {
                 turn++;
             } else if (turn == 2 & sAlive) {
-                if (noCrack >= 15) {
+                if (noCrack >= 15 && canShake) {
                     sFace.Y -= shakeFace;
                     shakeFace *= -1;
                     noCrack = 0;
                 }
-                if (mouse.X >= sAttack.X && mouse.X <= sAttack.X + sAttack.Width && mouse.Y >= sAttack.Y && mouse.Y <= sAttack.Y + sAttack.Height && mouse.LeftButton == ButtonState.Pressed) {
+                if (!choosing && mouse.X >= sAttack.X && mouse.X <= sAttack.X + sAttack.Width && mouse.Y >= sAttack.Y && mouse.Y <= sAttack.Y + sAttack.Height && mouse.RightButton == ButtonState.Pressed) {
                     sFace.Y = 500;
                     shakeFace = 20;
+                    canShake = false;
+                    attackFrames = 0;
+                    choosing = true;
+                }
+                if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta1.X + eRecta1.Width && mouse.Y >= eRecta1.Y && mouse.Y <= eRecta1.Y + eRecta1.Height && mouse.RightButton == ButtonState.Pressed)
+                {
                     enemy1.setHealth(enemy1.getHealth() - 10);
                     turn++;
-                    attackFrames = 0;
-                    sAttacking = true;
+                    canShake = true;
+                    choosing = false;
+                }
+                else if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta2.X + eRecta2.Width && mouse.Y >= eRecta2.Y && mouse.Y <= eRecta2.Y + eRecta2.Height && mouse.RightButton == ButtonState.Pressed)
+                {
+                    enemy2.setHealth(enemy2.getHealth() - 10);
+                    turn++;
+                    canShake = true;
+                    choosing = false;
                 }
             } else if (turn == 2 && !sAlive) {
                 turn++;
@@ -123,8 +152,8 @@ namespace MartyoAndStaine {
             sprite.Draw(Game.Content.Load<Texture2D>("Arena"), new Rectangle(900, 400, 150, 50), Color.White);
             if (mAlive) sprite.Draw(Game.Content.Load<Texture2D>("martyo"), new Rectangle(400, 126, 50, 100), Color.White);
             if (sAlive) sprite.Draw(Game.Content.Load<Texture2D>("staine"), new Rectangle(200, 300, 50, 100), Color.White);
-            if (enemy1.getAlive()) sprite.Draw(enemy1.getSprite(), new Rectangle(750, 176, 50, 50), Color.White);
-            if (enemy2.getAlive()) sprite.Draw(enemy2.getSprite(), new Rectangle(950, 350, 50, 50), Color.White);
+            if (enemy1.getAlive()) sprite.Draw(enemy1.getSprite(), eRecta1, Color.White);
+            if (enemy2.getAlive()) sprite.Draw(enemy2.getSprite(), eRecta2, Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(0, 500, 550, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(924, 500, 276, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("martyoFace"), mFace, Color.White);
