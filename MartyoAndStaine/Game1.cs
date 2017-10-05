@@ -93,7 +93,7 @@ namespace MartyoAndStaine {
             }
             if (aS == level && level.getFight()) {
                 LevelToggler(bW);
-                bW.setEnemy(new Shrub(50, 20, true, this.Content.Load<Texture2D>("shrub_reverse")), new Shrub(0, 0, false, this.Content.Load<Texture2D>("shrub_reverse")));
+                bW.setEnemy(new Shrub(50, 20, true, this.Content.Load<Texture2D>("shrub_reverse")), new Shrub(50, 20, true, this.Content.Load<Texture2D>("shrub_reverse")));
                 level.stopFight();
             }
             countSwitch++;
