@@ -12,7 +12,7 @@ namespace MartyoAndStaine
             
         }
 
-        public void move()
+        public void attackMove()
         {
 
         }

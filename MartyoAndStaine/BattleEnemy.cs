@@ -48,5 +48,10 @@ namespace MartyoAndStaine
         {
             return sprite;
         }
+
+        public void setSprite(Texture2D spriteus)
+        {
+            sprite = spriteus;
+        }
     }
 }
