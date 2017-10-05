@@ -171,3 +171,4 @@ D:\Martyo_and_Staine\MartyoAndStaine\obj\x86\Debug\MartyoAndStaine.csproj.CoreCo
 D:\Martyo_and_Staine\MartyoAndStaine\obj\x86\Debug\MartyoAndStaine.exe
 D:\Martyo_and_Staine\MartyoAndStaine\obj\x86\Debug\MartyoAndStaine.pdb
 D:\Black Blender World\Martyo and Staine Superstar Ripoff\Martyo and Staine V. 2.0\MartyoAndStaine\MartyoAndStaine\bin\Windows\x86\Debug\Sample.txt
+D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Sample.txt

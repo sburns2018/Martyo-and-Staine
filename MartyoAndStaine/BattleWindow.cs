@@ -89,6 +89,8 @@ namespace MartyoAndStaine {
                 if (whoAttac == 0) { if (mAlive) mHealth -= enemy1.getAttack(); else sHealth -= enemy1.getAttack(); } else { if (sAlive) sHealth -= enemy1.getAttack(); else mHealth -= enemy1.getAttack(); }
                 if (!enemy2.getAlive()) turn = 1; else turn++;
                 eAttacking1 = true;
+            } else if (turn == 3 && !enemy1.getAlive()) {
+                turn++;
             } else if (turn == 4 && enemy2.getAlive()) {
                 whoAttac = rnd.Next(0, 2);
                 attackFrames = 0;
