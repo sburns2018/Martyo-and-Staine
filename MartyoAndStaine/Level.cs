@@ -11,7 +11,7 @@ namespace MartyoAndStaine {
         protected Player martyo;
         protected double myLevel, eCount;
         protected bool enemiesGone, fight;
-        protected int lIndex;
+        protected int lIndex, decalX;
 
         public Level(Game game, SpriteBatch sb, double levelNum) : base(game) {
             fight = false;
@@ -26,6 +26,7 @@ namespace MartyoAndStaine {
             enemiesGone = false;
             eCount = 0;
             lIndex = 1;
+            decalX = -10000;
         }
 
         public void addPlatform(int x, int y, int w, int h) {
@@ -62,6 +63,11 @@ namespace MartyoAndStaine {
                 deadEnemies.Clear();
                 martyo.Reset();
             }
+            if (decalX >= 1400)
+            {
+                decalX = -10000;
+            }
+            decalX += 50;
             base.Update(gameTime);
         }
 
@@ -70,7 +76,12 @@ namespace MartyoAndStaine {
         public void stopFight() { fight = false; }
 
         public override void Draw(GameTime gameTime) {
-            sprite.Draw(Game.Content.Load<Texture2D>("level" + (myLevel).ToString()), new Rectangle(0, 0, 1200, 600), Color.White);
+            if (myLevel == 2)
+            {
+                sprite.Draw(Game.Content.Load<Texture2D>("stars"), new Rectangle(0, 0, 1200, 600), Color.White);
+                sprite.Draw(Game.Content.Load<Texture2D>("decal1"), new Rectangle(decalX, 80, 100, 200), Color.White);
+            }
+            sprite.Draw(Game.Content.Load<Texture2D>("level" + myLevel.ToString()), new Rectangle(0, 0, 1200, 600), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), platforms[0], Color.White);
             for (int i = 1; i < platforms.Length; i++) sprite.Draw(Game.Content.Load<Texture2D>("clod"), platforms[i], Color.White);
             base.Draw(gameTime);
