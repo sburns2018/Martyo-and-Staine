@@ -7,7 +7,6 @@ namespace MartyoAndStaine {
         protected Rectangle[] platforms;
         protected List<Enemy> deadEnemies;
         protected SpriteBatch sprite;
-        protected bool isDed;
         protected Player martyo;
         protected double myLevel, eCount;
         protected bool enemiesGone, fight;
@@ -15,7 +14,6 @@ namespace MartyoAndStaine {
 
         public Level(Game game, SpriteBatch sb, double levelNum) : base(game) {
             fight = false;
-            isDed = true;
             sprite = sb;
             platforms = new Rectangle[6];
             platforms[0] = new Rectangle(-100, 570, 1400, 30);
@@ -47,16 +45,15 @@ namespace MartyoAndStaine {
             for (int i = 0; i < components.Count; i++) {
                 if (components[i] is Enemy) {
                     if (((Enemy)components[i]).colP(martyo)) {
+                        fight = true;
                         deadEnemies.Add((Enemy)components[i]);
                         components.Remove(components[i]);
-                        fight = true;
                     }
                 }
             }
             foreach (DrawableGameComponent e in components) if (e is Enemy && !enemiesGone) eCount++;
             enemiesGone = true;
-            if (deadEnemies.Count == eCount && enemiesGone && isDed) {
-                // addLevel();
+            if (deadEnemies.Count == eCount && enemiesGone) {
                 myLevel++;
                 eCount = 0;
                 enemiesGone = false;

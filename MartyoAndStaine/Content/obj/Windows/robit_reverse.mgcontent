@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/robit_reverse.png</SourceFile>
-  <SourceTime>2017-09-18T13:43:42.4993293-04:00</SourceTime>
-  <DestFile>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/bin/Windows/robit_reverse.xnb</DestFile>
-  <DestTime>2017-10-17T11:03:50.6738219-04:00</DestTime>
+  <SourceFile>D:/Martyo_and_Staine/MartyoAndStaine/Content/robit_reverse.png</SourceFile>
+  <SourceTime>2017-10-05T08:09:38.9676923-04:00</SourceTime>
+  <DestFile>D:/Martyo_and_Staine/MartyoAndStaine/Content/bin/Windows/robit_reverse.xnb</DestFile>
+  <DestTime>2017-10-17T11:47:03.4820646-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
