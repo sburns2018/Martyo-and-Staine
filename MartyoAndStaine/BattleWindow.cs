@@ -70,13 +70,13 @@ namespace MartyoAndStaine {
                 }
                 if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta1.X + eRecta1.Width && mouse.Y >= eRecta1.Y && mouse.Y <= eRecta1.Y + eRecta1.Height && mouse.LeftButton == ButtonState.Pressed)
                 {
-                    enemy1.setHealth(enemy1.getHealth() - 10);
+                    enemy1.setHealth(enemy1.getHealth() - 50);
                     turn++;
                     canShake = true;
                     choosing = false;
                 } else if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta2.X + eRecta2.Width && mouse.Y >= eRecta2.Y && mouse.Y <= eRecta2.Y + eRecta2.Height && mouse.LeftButton == ButtonState.Pressed)
                 {
-                    enemy2.setHealth(enemy2.getHealth() - 10);
+                    enemy2.setHealth(enemy2.getHealth() - 50);
                     canShake = true;
                     turn++;
                     choosing = false;
@@ -98,14 +98,14 @@ namespace MartyoAndStaine {
                 }
                 if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta1.X + eRecta1.Width && mouse.Y >= eRecta1.Y && mouse.Y <= eRecta1.Y + eRecta1.Height && mouse.RightButton == ButtonState.Pressed)
                 {
-                    enemy1.setHealth(enemy1.getHealth() - 10);
+                    enemy1.setHealth(enemy1.getHealth() - 50);
                     turn++;
                     canShake = true;
                     choosing = false;
                 }
                 else if (choosing && mouse.X >= mAttack.X && mouse.X <= eRecta2.X + eRecta2.Width && mouse.Y >= eRecta2.Y && mouse.Y <= eRecta2.Y + eRecta2.Height && mouse.RightButton == ButtonState.Pressed)
                 {
-                    enemy2.setHealth(enemy2.getHealth() - 10);
+                    enemy2.setHealth(enemy2.getHealth() - 50);
                     turn++;
                     canShake = true;
                     choosing = false;
