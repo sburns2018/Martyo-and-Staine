@@ -52,12 +52,6 @@ namespace MartyoAndStaine {
 
         public void resetLife() { health = 100; }
 
-        public void changeLevel(int l) { level = l; }
-
-        public void addLevel() { level += .5; }
-
-        public void startFight() { level += 10; }
-
         public double getLevel() { return level; }
     }
 }

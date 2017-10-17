@@ -56,7 +56,8 @@ namespace MartyoAndStaine {
             foreach (DrawableGameComponent e in components) if (e is Enemy && !enemiesGone) eCount++;
             enemiesGone = true;
             if (deadEnemies.Count == eCount && enemiesGone && isDed) {
-                addLevel();
+                // addLevel();
+                myLevel++;
                 eCount = 0;
                 enemiesGone = false;
                 for (int r = 0; r < deadEnemies.Count; r++) components.Add(deadEnemies[r]);
@@ -76,13 +77,12 @@ namespace MartyoAndStaine {
         public void stopFight() { fight = false; }
 
         public override void Draw(GameTime gameTime) {
-            if (myLevel == 2)
-            {
+            if (myLevel == 2) {
                 sprite.Draw(Game.Content.Load<Texture2D>("stars"), new Rectangle(0, 0, 1200, 600), Color.White);
                 sprite.Draw(Game.Content.Load<Texture2D>("decal1"), new Rectangle(decalX, 80, 100, 200), Color.White);
             }
             sprite.Draw(Game.Content.Load<Texture2D>("level" + myLevel.ToString()), new Rectangle(0, 0, 1200, 600), Color.White);
-            sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), platforms[0], Color.White);
+            if (myLevel == 1) { sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), platforms[0], Color.White); }
             for (int i = 1; i < platforms.Length; i++) sprite.Draw(Game.Content.Load<Texture2D>("clod"), platforms[i], Color.White);
             base.Draw(gameTime);
         }

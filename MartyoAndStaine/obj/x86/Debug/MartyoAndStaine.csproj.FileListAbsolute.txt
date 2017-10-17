@@ -178,4 +178,10 @@ D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Sample.txt
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\decal1.xnb
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\level2.xnb
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\stars.xnb
+<<<<<<< HEAD
+D:\Black Blender World\Martyo and Staine Superstar Ripoff\Martyo and Staine V. 2.0\MartyoAndStaine\MartyoAndStaine\bin\Windows\x86\Debug\Content\decal1.xnb
+D:\Black Blender World\Martyo and Staine Superstar Ripoff\Martyo and Staine V. 2.0\MartyoAndStaine\MartyoAndStaine\bin\Windows\x86\Debug\Content\level2.xnb
+D:\Black Blender World\Martyo and Staine Superstar Ripoff\Martyo and Staine V. 2.0\MartyoAndStaine\MartyoAndStaine\bin\Windows\x86\Debug\Content\stars.xnb
+=======
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\arrow.xnb
+>>>>>>> 9ce715979fefea8ae6905d7fc3a762f4901d3f17
