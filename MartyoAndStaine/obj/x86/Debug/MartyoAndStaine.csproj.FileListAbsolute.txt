@@ -178,3 +178,4 @@ D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Sample.txt
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\decal1.xnb
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\level2.xnb
 D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\stars.xnb
+D:\Martyo_and_Staine\MartyoAndStaine\bin\Windows\x86\Debug\Content\arrow.xnb
