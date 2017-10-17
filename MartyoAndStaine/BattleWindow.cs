@@ -154,6 +154,8 @@ namespace MartyoAndStaine {
             if (sAlive) sprite.Draw(Game.Content.Load<Texture2D>("staine"), new Rectangle(200, 300, 50, 100), Color.White);
             if (enemy1.getAlive()) sprite.Draw(enemy1.getSprite(), eRecta1, Color.White);
             if (enemy2.getAlive()) sprite.Draw(enemy2.getSprite(), eRecta2, Color.White);
+            if (enemy1.getAlive() && choosing) sprite.Draw(Game.Content.Load<Texture2D>("arrow"), new Rectangle(eRecta1.X + 13, eRecta1.Y - 35, 25, 25), Color.White);
+            if (enemy2.getAlive() && choosing) sprite.Draw(Game.Content.Load<Texture2D>("arrow"), new Rectangle(eRecta2.X + 13, eRecta2.Y - 35, 25, 25), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(0, 500, 550, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("ground_grass_0"), new Rectangle(924, 500, 276, 100), Color.White);
             sprite.Draw(Game.Content.Load<Texture2D>("martyoFace"), mFace, Color.White);
