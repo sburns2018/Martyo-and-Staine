@@ -64,10 +64,7 @@ namespace MartyoAndStaine {
                 deadEnemies.Clear();
                 martyo.Reset();
             }
-            if (decalX >= 1400)
-            {
-                decalX = -10000;
-            }
+            if (decalX >= 1400) { decalX = -10000; }
             decalX += 50;
             base.Update(gameTime);
         }

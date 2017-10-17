@@ -1,8 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
-using System.IO;
 
 namespace MartyoAndStaine {
     public class Game1 : Game {
@@ -69,15 +67,6 @@ namespace MartyoAndStaine {
                 level.addPlatform(965, 420, 200, 30);
                 level.addEnemy(this, 1, 550, 520, 50, 50, "shrub", 0);
                 level.addEnemy(this, 1, 599, 70, 50, 50, "shrub", 3); 
-                /*using (var stream = TitleContainer.OpenStream("Sample.txt")) {
-                    using (var reader = new StreamReader(stream)) {
-                        // Call StreamReader methods like ReadLine, ReadBlock, or ReadToEnd to read in your data, e.g.: 
-                        while (!reader.EndOfStream) {
-                            var line = reader.ReadLine();
-                            line. // IDKDKDKIASdKASKAS
-                        }
-                    }
-                } */
             }
             if (countSwitch >= 15) {
                 if (Keyboard.GetState().IsKeyDown(Keys.Enter) && aS == level) {
