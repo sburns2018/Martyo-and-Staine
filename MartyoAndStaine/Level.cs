@@ -41,6 +41,7 @@ namespace MartyoAndStaine {
             }
         }
 
+<<<<<<< HEAD
         public void deleteEnemies()
         {
             for (int i = 0; i < components.Count; i++)
@@ -52,6 +53,9 @@ namespace MartyoAndStaine {
                 }
             }
         }
+=======
+        public void deleteEnemies() { for (int i = 0; i < components.Count; i++) if (components[i] is Enemy) components.Remove(components[i]); }
+>>>>>>> cabc34d245d47eae697a3bd8ef15741b5f5db3a9
 
         public void addEnemy(Game game, int xv, int sx, int sy, int width, int height, string sn, int index) { components.Add(new Enemy(game, xv, sx, sy, width, height, sprite, sn, platforms, index)); }
 
