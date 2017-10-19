@@ -48,6 +48,7 @@ namespace MartyoAndStaine {
                 if (components[i] is Enemy)
                 {
                     components.Remove(components[i]);
+                    i--;
                 }
             }
         }
@@ -70,7 +71,7 @@ namespace MartyoAndStaine {
                 myLevel++;
                 eCount = 0;
                 enemiesGone = false;
-                for (int r = 0; r < deadEnemies.Count; r++) components.Add(deadEnemies[r]);
+                //for (int r = 0; r < deadEnemies.Count; r++) components.Add(deadEnemies[r]);
                 deadEnemies.Clear();
                 deletePlatforms();
                 deleteEnemies();
