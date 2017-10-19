@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<<<<<<< HEAD
-  <SourceFile>D:/Martyo_and_Staine/MartyoAndStaine/Content/staine_walk1.png</SourceFile>
-  <SourceTime>2017-10-05T08:09:38.99895-04:00</SourceTime>
-  <DestFile>D:/Martyo_and_Staine/MartyoAndStaine/Content/bin/Windows/staine_walk1.xnb</DestFile>
-  <DestTime>2017-10-19T10:04:39.729043-04:00</DestTime>
-=======
   <SourceFile>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_walk1.png</SourceFile>
   <SourceTime>2017-09-08T08:09:16.8702527-04:00</SourceTime>
   <DestFile>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/bin/Windows/staine_walk1.xnb</DestFile>
-  <DestTime>2017-10-19T09:30:16.3875915-04:00</DestTime>
->>>>>>> cabc34d245d47eae697a3bd8ef15741b5f5db3a9
+  <DestTime>2017-10-19T10:40:11.3368954-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T10:05:36-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
