@@ -41,7 +41,18 @@ namespace MartyoAndStaine {
             }
         }
 
-        public void deleteEnemies() { for (int i = 0; i < components.Count; i++) if (components[i] is Enemy) components.Remove(components[i]); }
+<<<<<<< HEAD
+        public void deleteEnemies()
+        {
+            for (int i = 0; i < components.Count; i++)
+            {
+                if (components[i] is Enemy)
+                {
+                    components.Remove(components[i]);
+                    i--;
+                }
+            }
+        }
 
         public void addEnemy(Game game, int xv, int sx, int sy, int width, int height, string sn, int index) { components.Add(new Enemy(game, xv, sx, sy, width, height, sprite, sn, platforms, index)); }
 
@@ -61,7 +72,7 @@ namespace MartyoAndStaine {
                 myLevel++;
                 eCount = 0;
                 enemiesGone = false;
-                for (int r = 0; r < deadEnemies.Count; r++) components.Add(deadEnemies[r]);
+                //for (int r = 0; r < deadEnemies.Count; r++) components.Add(deadEnemies[r]);
                 deadEnemies.Clear();
                 deletePlatforms();
                 deleteEnemies();
