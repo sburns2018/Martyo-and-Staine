@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+<<<<<<< HEAD
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/Blender Man.png</File>
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/boycow.png</File>
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/boycow_reverse.png</File>
@@ -70,5 +71,73 @@
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/decal1.png</File>
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/stars.png</File>
     <File>D:/Martyo_and_Staine/MartyoAndStaine/Content/arrow.png</File>
+=======
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/Blender Man.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/boycow.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/boycow_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/buff.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/buff_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/grease.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/grease_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_jump.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_reverse_jump.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_reverse_walk1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_reverse_walk2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_walk1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyo_walk2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/ol-buff.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/ol-er-buff.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/relly-ol-buff.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/robit.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/robit_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_jump.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_reverse_jump.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_reverse_walk1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_reverse_walk2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_walk1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staine_walk2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/battlePause.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/bossHeart.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/buffFace.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/clod.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/fightBackground.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/grillFace.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/ground_grass_0.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/ground_grass_1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/ground_grass_2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/heart.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/hit.jpg</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/level1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/martyoFace.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staineFace.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/title.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/wall_grass_down.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/wall_grass_left.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/wall_grass_right.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/staineHeart.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/teuFace.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/Arena.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/shrub.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/shrub_attack_m.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/shrub_attack_s.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/shrub_face.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/shrub_reverse.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/mAttac.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/sAttac.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/hp.spritefont</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/pH.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/healthBar.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/mRect.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/sRect.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/eRect.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/level2.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/decal1.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/stars.png</File>
+    <File>D:/Black Blender World/Martyo and Staine Superstar Ripoff/Martyo and Staine V. 2.0/MartyoAndStaine/MartyoAndStaine/Content/arrow.png</File>
+>>>>>>> c96dff0e25dfce9b139f305db204d011ff8bf256
   </SourceFiles>
 </SourceFileCollection>

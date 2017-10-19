@@ -58,6 +58,7 @@ namespace MartyoAndStaine {
                 }
             }
         }
+<<<<<<< HEAD
 
         public bool detectEnemies()
         {
@@ -70,6 +71,8 @@ namespace MartyoAndStaine {
             }
             return false;
         }
+=======
+>>>>>>> c96dff0e25dfce9b139f305db204d011ff8bf256
 
         public void addEnemy(Game game, int xv, int sx, int sy, int width, int height, string sn, int index) { components.Add(new Enemy(game, xv, sx, sy, width, height, sprite, sn, platforms, index)); }
 
