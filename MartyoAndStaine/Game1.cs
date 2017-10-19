@@ -87,6 +87,12 @@ namespace MartyoAndStaine {
                 bW.setEnemy(new Shrub(50, 5, true, this.Content.Load<Texture2D>("shrub_reverse")), new Shrub(50, 5, true, this.Content.Load<Texture2D>("shrub_reverse")));
                 level.stopFight();
             }
+            if (aS == level && level.getLevel() == 2 && !level.detectEnemies())
+            {
+                level.addPlatform(400, 300, 200, 30);
+                level.addEnemy(this, 1, 450, 250, 50, 50, "shrub", 1);
+                level.stopAddLevelLoop(2);
+            }
             countSwitch++;
             base.Update(gameTime);
         }

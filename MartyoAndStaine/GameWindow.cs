@@ -45,7 +45,5 @@ namespace MartyoAndStaine {
         public void loseLife(int val) { health = health - val; }
 
         public void resetLife() { health = 100; }
-
-        public double getLevel() { return level; }
     }
 }
