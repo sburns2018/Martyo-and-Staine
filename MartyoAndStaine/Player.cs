@@ -1,15 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System.Collections.Generic;
 
 namespace MartyoAndStaine {
     public class Player : Entity {
         private bool doJump, up, down;
         private int curY, yVelocity, frameCount;
-        private Rectangle[] plats;
+        private List<Rectangle> plats;
         private Rectangle curPlat;
 
-        public Player(Game game, int xv, int yv, int sx, int sy, int width, int height, SpriteBatch sb, string sn, Rectangle[] platforms) : base(game, xv, sx, sy, width, height, sb, sn) {
+        public Player(Game game, int xv, int yv, int sx, int sy, int width, int height, SpriteBatch sb, string sn, List<Rectangle> platforms) : base(game, xv, sx, sy, width, height, sb, sn) {
             doJump = false;
             up = false;
             down = false;
@@ -28,7 +29,7 @@ namespace MartyoAndStaine {
             if (doJump) {
                 if (up) bounds.Y -= 10; else bounds.Y += 10;
                 if (bounds.Y + bounds.Height <= curY - 150) up = false;
-                for (int i = 0; i < plats.Length; i++) {
+                for (int i = 0; i < plats.Count; i++) {
                     if (bounds.Y + bounds.Height == plats[i].Y && bounds.X >= plats[i].X && bounds.X <= plats[i].X + plats[i].Width) {
                         curY = bounds.Y;
                         curPlat = plats[i];
@@ -39,7 +40,7 @@ namespace MartyoAndStaine {
             }
             if (bounds.X < curPlat.X || bounds.X > curPlat.X) {
                 down = true;
-                for (int i = 0; i < plats.Length; i++) {
+                for (int i = 0; i < plats.Count; i++) {
                     if (bounds.Y + bounds.Height == plats[i].Y && bounds.X >= plats[i].X && bounds.X <= plats[i].X + plats[i].Width) {
                         curY = bounds.Y;
                         curPlat = plats[i];
