@@ -41,7 +41,6 @@ namespace MartyoAndStaine {
             }
         }
 
-<<<<<<< HEAD
         public void deleteEnemies()
         {
             for (int i = 0; i < components.Count; i++)
